@@ -47,7 +47,7 @@ function CreatePhoneBookListing() {
                         <h4>Add New List</h4>
                     </div>
                     <div className="col-4 text-right">
-                        <Link to="/"><button>Back</button></Link>
+                        <Link to="/PhoneBook"><button>Back</button></Link>
                     </div>
                 </div>
             </div> 
@@ -76,7 +76,7 @@ function CreatePhoneBookListing() {
                     </div>
                     <div className="group">
                         <label>Number</label>
-                        <input type="text" className="form-control" placeholder="012-34567890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value={number} onChange={e => setNumber(e.target.value)}/>
+                        <input type="text" className="form-control" placeholder="012-34567890" value={number} onChange={e => setNumber(e.target.value)}/>
                     </div>
                     <div className="btn-group text-right">
                         <button className="btn" type="submit">ADD</button>
