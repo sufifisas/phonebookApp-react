@@ -76,7 +76,7 @@ function CreatePhoneBookListing() {
                     </div>
                     <div className="group">
                         <label>Number</label>
-                        <input type="text" className="form-control" placeholder="012-34567890" value={number} onChange={e => setNumber(e.target.value)}/>
+                        <input type="text" className="form-control" placeholder="012-3456789" value={number} onChange={e => setNumber(e.target.value)}/>
                     </div>
                     <div className="btn-group text-right">
                         <button className="btn" type="submit">ADD</button>
