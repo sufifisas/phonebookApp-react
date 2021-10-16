@@ -27,12 +27,165 @@
 .App-link {
   color: #61dafb;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+h4 {
+  margin-bottom: 0;
+}
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(18, 27, 43, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  font-size: 16px;
+}
+.glass_card {
+  width: 500px;
+  padding: 24px 24px;
+}
+.welcome h4 {
+  opacity: 0.8;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.welcome p {
+  opacity: 0.5;
+}
+.welcome button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #0af;
+}
+.welcome button:hover {
+  color: #0091d9;
+  cursor: pointer;
+}
+.group {
+  margin-top: 16px;
+}
+.group:first-child {
+  margin-top: 0;
+}
+.form-group {
+  margin-bottom: 0;
+}
+label {
+  margin-bottom: 5px;
+}
+.btn-group {
+  margin-top: 16px;
+  display: block;
+}
+.btn-group button {
+  padding: 0px 25px;
+  background: #2ea44f;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 5px;
+  height: 40px;
+  font-weight: 600;
+}
+.form-control {
+  background-color: #1f2a37;
+  border: 1px solid #4b5663;
+  color: #fff;
+}
+.head-table {
+  padding: 0 24px 24px;
+  margin: 0 -24px 24px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.alert-banner {
+  padding: 10px 15px;
+  color:#4CAF50;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.alert-banner p {
+  margin-bottom: 0;
+}
+.alert-banner.failed{
+  color:#f44336;
+}
+.page-loader {
+  text-align: center;
+}
+.head-table button {
+  background: none;
+  border: none;
+  color: #0af;
+  font-weight: 600;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.head-table button svg {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+.head-table button:hover {
+  color: #0091d9;
+  cursor: pointer;
+}
+.list-table {
+  padding: 16px;
+}
+.list-table .scrollable {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+
+.list-table li {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: 10px 0px;
+}
+.list-table li:first-child {
+  padding-top: 0;
+}
+.list-table li:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+@media (max-width: 768px) {
+  .glass_card {
+    padding: 24px 15px;
+    margin: 0 15px;
   }
-  to {
-    transform: rotate(360deg);
+  .head-table {
+    padding: 0 15px 24px;
+    margin: 0 -15px 24px;
+  }
+}
+@media (max-width: 480px) {
+  .glass_card {
+    width: calc(100% - 30px);
+  }
+  .welcome h4 span {
+    display: block;
   }
 }
