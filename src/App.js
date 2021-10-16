@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Switch , Route } from 'react-router-dom'
 import Home from './Home'
 import PhoneBook from './PhoneBook'
 import CreatePhoneBook from './CreatePhoneBook'
-import './App.css';
 
 function App() {
   return (
